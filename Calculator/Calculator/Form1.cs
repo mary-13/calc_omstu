@@ -17,35 +17,33 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            double firstnumber = Convert.ToDouble(textBox1.Text);
-            double secondnumber = Convert.ToDouble(textBox2.Text);
-            double result = firstnumber - secondnumber;
-            label1.Text = Convert.ToString(result);
-        }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Operation(object sender, EventArgs e)
         {
             double firstnumber = Convert.ToDouble(textBox1.Text);
             double secondnumber = Convert.ToDouble(textBox2.Text);
-            double result = firstnumber + secondnumber;
-            label1.Text = Convert.ToString(result);
-        }
+            double result;
+            switch(((Button)sender).Name)
+                {
+                case "button1":
+                result = firstnumber + secondnumber;
+                break;
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            double firstnumber = Convert.ToDouble(textBox1.Text);
-            double secondnumber = Convert.ToDouble(textBox2.Text);
-            double result = firstnumber * secondnumber;
-            label1.Text = Convert.ToString(result);
-        }
+                case "button2":
+                result = firstnumber - secondnumber;
+                break;
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            double firstnumber = Convert.ToDouble(textBox1.Text);
-            double secondnumber = Convert.ToDouble(textBox2.Text);
-            double result = firstnumber / secondnumber;
+                case "button3":
+                result = firstnumber * secondnumber;
+                break;
+
+                case "button4":
+                result = firstnumber / secondnumber;
+                break;
+
+                default:
+                    throw new Exception("Неизвестная операция");
+            }
             label1.Text = Convert.ToString(result);
         }
     }
