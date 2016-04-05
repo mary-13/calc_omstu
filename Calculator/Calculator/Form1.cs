@@ -19,7 +19,34 @@ namespace Calculator
 
         private void button2_Click(object sender, EventArgs e)
         {
+            double firstnumber = Convert.ToDouble(textBox1.Text);
+            double secondnumber = Convert.ToDouble(textBox2.Text);
+            double result = firstnumber - secondnumber;
+            label1.Text = Convert.ToString(result);
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double firstnumber = Convert.ToDouble(textBox1.Text);
+            double secondnumber = Convert.ToDouble(textBox2.Text);
+            double result = firstnumber + secondnumber;
+            label1.Text = Convert.ToString(result);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            double firstnumber = Convert.ToDouble(textBox1.Text);
+            double secondnumber = Convert.ToDouble(textBox2.Text);
+            double result = firstnumber * secondnumber;
+            label1.Text = Convert.ToString(result);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            double firstnumber = Convert.ToDouble(textBox1.Text);
+            double secondnumber = Convert.ToDouble(textBox2.Text);
+            double result = firstnumber / secondnumber;
+            label1.Text = Convert.ToString(result);
         }
     }
 }
