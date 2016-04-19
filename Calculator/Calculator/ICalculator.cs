@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    public class Add:ICalculator
+    public interface ICalculator
     {
-        public double Calculate(double first, double second)
-        {
-            return first + second;
-        }
+        double Calculate(double first, double second)
     }
 }
