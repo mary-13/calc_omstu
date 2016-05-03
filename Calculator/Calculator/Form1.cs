@@ -27,5 +27,14 @@ namespace Calculator
 
             label1.Text = Convert.ToString(result);
         }
+
+        private void SingleOperation(object sender, EventArgs e)
+        {
+            double firstnumber = Convert.ToDouble(textBox1.Text);
+            IOneArg calc = SingleFactory.CreateCalc(((Button)sender).Name);
+            double result = calc.Calc(firstnumber);
+
+            label1.Text = Convert.ToString(result);
+        }
     }
 }
