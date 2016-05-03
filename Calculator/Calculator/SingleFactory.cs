@@ -18,6 +18,27 @@ namespace Calculator
                 case "button6":
                     return new Cos();
 
+                case "button9":
+                    return new Tg();
+
+                case "button12":
+                    return new Ctg();
+
+                case "button7":
+                    return new Ln();
+
+                case "button13":
+                    return new Log10();
+
+                case "button8":
+                    return new Exp();
+
+                case "button11":
+                    return new Square();
+
+                case "button15":
+                    return new Sqrt();
+
                 default:
                     throw new Exception("Неизвестная операция");
             }

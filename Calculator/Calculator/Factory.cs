@@ -24,6 +24,12 @@ namespace Calculator
                 case "button4":
                     return new Division();
 
+                case "button10":
+                    return new Log();
+
+                case "button14":
+                    return new AToX();
+
                 default:
                     throw new Exception("Неизвестная операция");
             }
