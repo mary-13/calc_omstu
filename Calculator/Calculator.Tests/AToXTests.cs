@@ -1,17 +1,18 @@
 ﻿using Calculator.TwoOperation;
 using NUnit.Framework;
+using NUnit.Framework.Internal;
 
 namespace Calculator.Tests
 {
     [TestFixture]
-    public class MultiplicationTests
+    public class AToXTests
     {
-        [TestCase(2, 2, 4)]
-        [TestCase(2, 3, 6)]
-        [TestCase(10, -12, -120)]
+        [TestCase(25, -0.5, 0.2)]
+        [TestCase(4, 3, 64)]
+        [TestCase(10, -2, 0.01)]
         public void SimpleTest(double firstarg, double seconarg, double expected)
         {
-            Multiplication calc = new Multiplication();
+            AToX calc = new AToX();
             double result = calc.Calculate(firstarg, seconarg);
             Assert.AreEqual(expected, result);
         }

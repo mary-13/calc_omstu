@@ -6,12 +6,14 @@ namespace Calculator.Tests
     [TestFixture]
     public class AddTests
     {
-        [Test]
-        public void SimpleTest()
+        [TestCase(2, 2, 4)]
+        [TestCase(2, 3, 5)]
+        [TestCase(10, -12, -2)]
+        public void SimpleTest(double firstarg, double seconarg, double expected)
         {
             Add calc = new Add();
-            double result = calc.Calculate(2, 2);
-            Assert.AreEqual(4,result);
+            double result = calc.Calculate(firstarg, seconarg);
+            Assert.AreEqual(expected, result);
         }
     }
 }

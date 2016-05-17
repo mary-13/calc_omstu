@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddTests.cs" />
+    <Compile Include="AToXTests.cs" />
     <Compile Include="DivisionTests.cs" />
+    <Compile Include="LogTests.cs" />
     <Compile Include="MultiplicationTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SubstractionTests.cs" />
