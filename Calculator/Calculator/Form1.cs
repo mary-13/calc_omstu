@@ -24,7 +24,7 @@ namespace Calculator
             }
             catch (Exception exception)
             {
-                MessageBox.Show("Произошла ошибка" + exception.Message);
+                MessageBox.Show("Произошла ошибка: " + exception.Message);
             } 
         }
 
@@ -40,7 +40,7 @@ namespace Calculator
             }
             catch (Exception exception)
             {
-                MessageBox.Show("Произошла ошибка" + exception.Message);
+                MessageBox.Show("Произошла ошибка: " + exception.Message);
             }
         }
     }
