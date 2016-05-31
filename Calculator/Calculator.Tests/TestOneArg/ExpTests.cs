@@ -1,8 +1,7 @@
 ﻿using Calculator.Single;
 using NUnit.Framework;
-using NUnit.Framework.Internal;
 
-namespace Calculator.Tests
+namespace Calculator.Tests.TestOneArg
 {
     [TestFixture]
     public class ExpTests

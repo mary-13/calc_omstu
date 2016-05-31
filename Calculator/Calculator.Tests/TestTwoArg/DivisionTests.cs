@@ -2,7 +2,7 @@
 using Calculator.TwoOperation;
 using NUnit.Framework;
 
-namespace Calculator.Tests
+namespace Calculator.Tests.TestTwoArg
 {
     [TestFixture]
     public class DivisionTests

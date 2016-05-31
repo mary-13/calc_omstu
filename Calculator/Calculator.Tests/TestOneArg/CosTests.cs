@@ -1,7 +1,7 @@
 ﻿using Calculator.Single;
 using NUnit.Framework;
 
-namespace Calculator.Tests
+namespace Calculator.Tests.TestOneArg
 {
    
         [TestFixture]

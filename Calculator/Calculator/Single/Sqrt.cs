@@ -6,6 +6,10 @@ namespace Calculator.Single
     {
         public double Calc(double first)
         {
+            if (first < 0)
+            {
+                throw new Exception("Корень отрицательного числа");
+            }
             return Math.Sqrt(first);
         }
     }

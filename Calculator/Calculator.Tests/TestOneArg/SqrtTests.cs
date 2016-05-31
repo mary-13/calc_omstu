@@ -1,7 +1,8 @@
-﻿using Calculator.Single;
+﻿using System;
+using Calculator.Single;
 using NUnit.Framework;
 
-namespace Calculator.Tests
+namespace Calculator.Tests.TestOneArg
 {
     [TestFixture]
     public class SqrtTests
@@ -14,6 +15,12 @@ namespace Calculator.Tests
             Sqrt calc = new Sqrt();
             double result = calc.Calc(firstarg);
             Assert.AreEqual(expected, result);
-        } 
+        }
+        [Test]
+        public void SqrtOfNegativeNumberTest()
+        {
+            Sqrt calc = new Sqrt();
+            Assert.Throws<Exception>(() => calc.Calc(-2)); 
+        }
     }
 }
