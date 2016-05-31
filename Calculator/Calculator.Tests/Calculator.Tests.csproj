@@ -43,13 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddTests.cs" />
-    <Compile Include="AToXTests.cs" />
-    <Compile Include="DivisionTests.cs" />
-    <Compile Include="LogTests.cs" />
-    <Compile Include="MultiplicationTests.cs" />
+    <Compile Include="TestOneArg\CosTests.cs" />
+    <Compile Include="TestOneArg\CtgTests.cs" />
+    <Compile Include="TestOneArg\ExpTests.cs" />
+    <Compile Include="TestOneArg\LnTests.cs" />
+    <Compile Include="TestOneArg\Log10Tests.cs" />
+    <Compile Include="TestOneArg\SinTests.cs" />
+    <Compile Include="TestOneArg\SqrtTests.cs" />
+    <Compile Include="TestOneArg\SquareTests.cs" />
+    <Compile Include="TestOneArg\TgTests.cs" />
+    <Compile Include="TestTwoArg\AddTests.cs" />
+    <Compile Include="TestTwoArg\AToXTests.cs" />
+    <Compile Include="TestTwoArg\DivisionTests.cs" />
+    <Compile Include="TestTwoArg\LogTests.cs" />
+    <Compile Include="TestTwoArg\MultiplicationTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SubstractionTests.cs" />
+    <Compile Include="TestTwoArg\SubstractionTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Calculator\Calculator.csproj">
