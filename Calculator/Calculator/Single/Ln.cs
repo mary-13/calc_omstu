@@ -6,6 +6,10 @@ namespace Calculator.Single
     {
         public double Calc(double first)
         {
+            if (first <= 0)
+            {
+                throw new Exception("Введено неверное значение");
+            }
             return Math.Log(first);
         }
     }

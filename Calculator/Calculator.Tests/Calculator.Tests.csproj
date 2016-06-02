@@ -48,6 +48,7 @@
     <Compile Include="TestOneArg\ExpTests.cs" />
     <Compile Include="TestOneArg\LnTests.cs" />
     <Compile Include="TestOneArg\Log10Tests.cs" />
+    <Compile Include="TestOneArg\SingleFactoryTests.cs" />
     <Compile Include="TestOneArg\SinTests.cs" />
     <Compile Include="TestOneArg\SqrtTests.cs" />
     <Compile Include="TestOneArg\SquareTests.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="TestTwoArg\AddTests.cs" />
     <Compile Include="TestTwoArg\AToXTests.cs" />
     <Compile Include="TestTwoArg\DivisionTests.cs" />
+    <Compile Include="TestTwoArg\FactoryTests.cs" />
     <Compile Include="TestTwoArg\LogTests.cs" />
     <Compile Include="TestTwoArg\MultiplicationTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

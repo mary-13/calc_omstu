@@ -1,4 +1,5 @@
-﻿using Calculator.Single;
+﻿using System;
+using Calculator.Single;
 using NUnit.Framework;
 
 namespace Calculator.Tests.TestOneArg
@@ -15,5 +16,11 @@ namespace Calculator.Tests.TestOneArg
             double result = calc.Calc(firstarg);
             Assert.AreEqual(expected, result, 0.0000001);
         }    
+        [Test]
+         public void TgExceptionTest()
+         {
+              Ctg calc = new Ctg();
+              Assert.Throws<Exception>(() => calc.Calc(0)); 
+         }
     }
 }

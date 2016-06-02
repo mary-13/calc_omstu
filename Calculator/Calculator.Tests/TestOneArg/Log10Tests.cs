@@ -1,4 +1,5 @@
-﻿using Calculator.Single;
+﻿using System;
+using Calculator.Single;
 using NUnit.Framework;
 
 namespace Calculator.Tests.TestOneArg
@@ -13,6 +14,19 @@ namespace Calculator.Tests.TestOneArg
             Log10 calc = new Log10();
             double result = calc.Calc(firstarg);
             Assert.AreEqual(expected, result);
-        } 
+        }
+        [Test]
+        public void BaseLogarithmOfZeroTest()
+        {
+            Log10 calc = new Log10();
+            Assert.Throws<Exception>(() => calc.Calc(0)); //сбой теста
+        }
+
+        [Test]
+        public void LogarithmOfZeroTest()
+        {
+            Log10 calc = new Log10();
+            Assert.Throws<Exception>(() => calc.Calc(-2)); //сбой теста
+        }
     }
 }

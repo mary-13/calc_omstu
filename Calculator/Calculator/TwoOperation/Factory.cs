@@ -5,6 +5,13 @@ namespace Calculator
 {
     public static class Factory
     {
+        /// <summary>
+        /// Button's job for two arguments
+        /// </summary>
+        /// <param name="name"> transfer button's name
+        /// </param>
+        /// <returns> return class
+        /// </returns>
         public static ICalculator CreateCalculator (string name)
         {
             switch (name)

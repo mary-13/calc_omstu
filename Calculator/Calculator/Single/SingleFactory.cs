@@ -5,6 +5,13 @@ namespace Calculator
 {
     public static class SingleFactory
     {
+        /// <summary>
+        /// Button's job for one argument
+        /// </summary>
+        /// <param name="name"> transfer button's name
+        /// </param>
+        /// <returns> return class
+        /// </returns>
         public static IOneArg CreateCalc(string name)
         {
             switch (name)
