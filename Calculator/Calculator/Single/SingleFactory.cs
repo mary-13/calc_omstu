@@ -1,7 +1,6 @@
 ﻿using System;
-using Calculator.Single;
 
-namespace Calculator
+namespace Calculator.Single
 {
     public static class SingleFactory
     {

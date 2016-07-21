@@ -1,4 +1,4 @@
-﻿namespace Calculator
+﻿namespace Calculator.Single
 {
     public interface IOneArg
     {        

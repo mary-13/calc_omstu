@@ -1,4 +1,4 @@
-﻿namespace Calculator
+﻿namespace Calculator.TwoOperation
 {
     public interface ICalculator
     {
